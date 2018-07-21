@@ -2,44 +2,58 @@ body {
     background-image: url("https://static.vecteezy.com/system/resources/previews/000/135/905/non_2x/free-jewel-vector-background.jpg");
     background-size: cover;
 }
+
 .jumbotron {
-background-color: aqua;
+background:linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+}
+h1{
+    font-family: 'Modak', cursive;
+    font-weight: bold;
+}
+
+.lead, p {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 27px;
+
+}
+
+.fa-gem:before {
+    margin-right: 4px;
 }
 
 
-.tar-score {
+.targetscore {
     height: 250px;
     width: 241px;
-    border-style: solid;
-    border-color: black;
+    background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
     text-align: center;
 }
 
-.score-box {
+.scorebox {
     height: 250px;
     width: 241px;
-    border-style: solid;
-    border-color: black;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
     text-align: center;
 }
 .selector {
     height: 250px;
     width: 680px;
-    border-style: solid;
-    border-color: black;
+    background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
     text-align: center;
 }
+
 .wins {
     height: 250px;
     width: 241px;
-    border-style: solid;
-    border-color: black;
+    background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
     text-align: center;
+    margin-top: 40px;
 }
+
 .losses {
     height: 250px;
     width: 241px;
-    border-style: solid;
-    border-color: black;
+    background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
     text-align: center;
+    margin-top: 40px;
 }
