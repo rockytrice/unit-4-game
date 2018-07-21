@@ -16,6 +16,27 @@ h1{
     font-size: 27px;
 
 }
+img.crystal-pink  {
+    width: 150px;
+    position: relative;
+    bottom: 217px;
+}
+img.crystal-purple {
+    width: 150px;
+    position: relative;
+    bottom: 217px;
+}
+img.crystal-blue {
+    width: 150px;
+    position: relative;
+    bottom: 363px; 
+    left: 464px; 
+}
+img.crystal-magenta {
+    width: 150px;
+    position: relative;
+    bottom: 217px;
+}
 
 .fa-gem:before {
     margin-right: 4px;
