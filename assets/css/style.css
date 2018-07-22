@@ -4,63 +4,89 @@ body {
 }
 
 .jumbotron {
-background:linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
-}
-h1{
-    font-family: 'Modak', cursive;
-    font-weight: bold;
+    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
 }
 
-.lead, p {
+h1 {
+    font-family: 'Modak', cursive;
+    text-align: center;
+}
+
+.container container-game {
+    height: 600px;
+}
+
+.lead,
+p {
     font-family: 'Architects Daughter', cursive;
     font-size: 27px;
-
-}
-img.crystal-pink  {
-    width: 150px;
-    position: relative;
-    bottom: 217px;
-}
-img.crystal-purple {
-    width: 150px;
-    position: relative;
-    bottom: 217px;
-}
-img.crystal-blue {
-    width: 150px;
-    position: relative;
-    bottom: 363px; 
-    left: 464px; 
-}
-img.crystal-magenta {
-    width: 150px;
-    position: relative;
-    bottom: 217px;
 }
 
 .fa-gem:before {
     margin-right: 4px;
 }
 
+img.magenta-crystal {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 40px;
+}
+
+img.pink-crystal {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 40px;
+}
+
+img.purple-crystal {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 40px;
+}
+
+img.blue-crystal {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 468px;
+    bottom: 63px;
+}
+
+.crystal-image {
+    width: 100px;
+    height: 100px;
+}
 
 #targetscore {
     height: 250px;
     width: 241px;
     background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
     text-align: center;
+    font-size: 100px;
+    padding-top: 33px;
+    font-family: 'Modak', cursive;
 }
 
-#scorebox {
+#userscore {
     height: 250px;
     width: 241px;
     background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
     text-align: center;
+    font-size: 100px;
+    padding-top: 33px;
+    font-family: 'Modak', cursive;
 }
+
 #selectors {
     height: 250px;
-    width: 680px;
+    width: 600px;
     background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
     text-align: center;
+    position: absolute;
+    top: 51px;
 }
 
 #wins {
@@ -69,12 +95,19 @@ img.crystal-magenta {
     background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
     text-align: center;
     margin-top: 40px;
+    font-size: 100px;
+    padding-top: 33px;
+    font-family: 'Modak', cursive;
 }
 
 #losses {
     height: 250px;
     width: 241px;
+    position: relative;
     background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
     text-align: center;
     margin-top: 40px;
+    font-size: 100px;
+    padding-top: 33px;
+    font-family: 'Modak', cursive;
 }
