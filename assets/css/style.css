@@ -26,21 +26,21 @@ p {
     margin-right: 4px;
 }
 
-img.magenta-crystal {
+.magenta-crystal {
     height: 150px;
     width: 150px;
     position: relative;
     top: 40px;
 }
 
-img.pink-crystal {
+ img.pink-crystal {
     height: 150px;
     width: 150px;
     position: relative;
     top: 40px;
 }
 
-img.purple-crystal {
+/* img.purple-crystal {
     height: 150px;
     width: 150px;
     position: relative;
@@ -58,7 +58,7 @@ img.blue-crystal {
 .crystal-image {
     width: 100px;
     height: 100px;
-}
+} */  
 
 #targetscore {
     height: 250px;
