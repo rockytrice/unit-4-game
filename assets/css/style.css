@@ -26,36 +26,16 @@ p {
     margin-right: 4px;
 }
 
-/* .magenta-crystal {
-    height: 150px;
-    width: 150px;
+ img {
+    height: 125px;
+    width: 125px;
     position: relative;
     top: 40px;
+    display: inline-block;
 }
-
-.pink-crystal {
-    height: 150px;
-    width: 150px;
-    position: relative;
-    top: 40px;
-    right: 30px;
-}
-
-.purple-crystal {
-    height: 150px;
-    width: 150px;
-    position: relative;
-    top: 40px;
-    right: 46px;
-}
-
-.blue-crystal {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    left: 468px;
-    bottom: 63px;
-} */
+.btn:not(:disabled):not(.disabled) {
+    margin-right: -22px;
+} 
 
 #targetscore {
     height: 250px;
