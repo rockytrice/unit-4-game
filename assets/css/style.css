@@ -26,39 +26,36 @@ p {
     margin-right: 4px;
 }
 
-.magenta-crystal {
+/* .magenta-crystal {
     height: 150px;
     width: 150px;
     position: relative;
     top: 40px;
 }
 
- img.pink-crystal {
+.pink-crystal {
     height: 150px;
     width: 150px;
     position: relative;
     top: 40px;
+    right: 30px;
 }
 
-/* img.purple-crystal {
+.purple-crystal {
     height: 150px;
     width: 150px;
     position: relative;
     top: 40px;
+    right: 46px;
 }
 
-img.blue-crystal {
+.blue-crystal {
     height: 150px;
     width: 150px;
     position: absolute;
     left: 468px;
     bottom: 63px;
-}
-
-.crystal-image {
-    width: 100px;
-    height: 100px;
-} */  
+} */
 
 #targetscore {
     height: 250px;
