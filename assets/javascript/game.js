@@ -31,25 +31,30 @@
 
 
      $("#blue-crystal").on("click", function () {
-         //     score = parseInt(score) + parseInt(blueCrystalBtn);
-         $("#userscore").html("<p>" + blueCrystalBtn + "</p>");
+        score = parseInt(score) + parseInt(blueCrystalBtn);
+         $("#userscore").text(blueCrystalBtn);
          console.log("blue crystal is " + blueCrystalBtn);
 
      });
      $("#pink-crystal").on("click", function () {
-         $("#userscore").html("<p>" + pinkCrystalBtn + "</p>");
-         console.log("pink crystal " + pinkCrystalBtn);
-     })    
+        score = parseInt(score) + parseInt(blueCrystalBtn);
+         $("#userscore").text(pinkCrystalBtn);
+         console.log("pink crystal is " + pinkCrystalBtn);
+     })
 
 
-$("#purple-crystal").on("click", function (){
-    $("#userscore").html("<h1>" + purpleCrystalBtn + "</h1>");
-    console.log("purple crystal " + purpleCrystalBtn);
+     $("#purple-crystal").on("click", function () {
+         $("#userscore").text(purpleCrystalBtn);
+         console.log("purple crystal is " + purpleCrystalBtn);
 
-})
+     })
 
 
+     $("#magenta-crystal").on("click", function () {
+         $("#userscore").text(magentaCrystalBtn);
+         console.log("blue crystal is " + magentaCrystalBtn);
 
+     })
 
 
 
