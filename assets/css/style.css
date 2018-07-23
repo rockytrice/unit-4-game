@@ -45,6 +45,7 @@ p {
     font-size: 100px;
     padding-top: 33px;
     font-family: 'Modak', cursive;
+    margin-bottom: 30px;
 }
 
 #userscore {
@@ -75,6 +76,8 @@ p {
     font-size: 100px;
     padding-top: 33px;
     font-family: 'Modak', cursive;
+    margin-left: 50px;
+    margin-top: 9px;
 }
 
 #losses {
@@ -87,4 +90,6 @@ p {
     font-size: 100px;
     padding-top: 33px;
     font-family: 'Modak', cursive;
+    margin-left: 50px;
+    margin-top: 9px;
 }
