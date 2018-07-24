@@ -41,6 +41,7 @@ $(document).ready(function () {
             $("#wins").text(wins);
 
             console.log("you win");
+            reset();
         }
         // if the score is larger than the targetnumber you lose.
         if (score > targetNumber) {
@@ -147,7 +148,9 @@ $(document).ready(function () {
     console.log("new pinkcrystal value is " + pinkCrystalBtn);
     var purpleCrystalBtn = Math.floor(Math.random() * 11) + 1;
     console.log("new purplecrystal value " + purpleCrystalBtn);
-
+    score = parseInt(score) + parseInt(blueCrystalBtn);
+    $("#userscore").text(score);
+    console.log(score);
     }
 
 });
