@@ -118,8 +118,9 @@ $(document).ready(function () {
             losses++;
             $("#losses").text(losses);
             console.log("you lose");
+            reset();
         }
-        reset();
+        
     });
 
 
@@ -129,9 +130,19 @@ $(document).ready(function () {
 
     function reset() {
      score=0;
+     $("#userscore").text(score);
      targetNumber=0;
      targetNumber = Math.floor(Math.random() * 101) + 19;
      $("#targetscore").text(targetNumber);
+     var blueCrystalBtn = Math.floor(Math.random() * 11) + 1;
+    console.log("new bluecrystal value is " + blueCrystalBtn);
+    var magentaCrystalBtn = Math.floor(Math.random() * 11) + 1;
+    console.log("new magentacyrstal value is " + magentaCrystalBtn);
+    var pinkCrystalBtn = Math.floor(Math.random() * 11) + 1;
+    console.log("new pinkcrystal value is " + pinkCrystalBtn);
+    var purpleCrystalBtn = Math.floor(Math.random() * 11) + 1;
+    console.log("new purplecrystal value " + purpleCrystalBtn);
+
     }
 
 });
