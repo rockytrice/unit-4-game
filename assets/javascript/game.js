@@ -41,57 +41,56 @@ $(document).ready(function () {
 
     $("#blue-crystal").on("click", function () {
 
+        score = parseInt(score) + parseInt(blueCrystalBtn);
         $("#userscore").text(score);
-        score = score + blueCrystalBtn;
         console.log(score);
-        if(score === targetNumber){
-            win++;
-            console.log("you win");
+        if (score === targetNumber) {
+            wins++;
             $("#wins").text(wins);
-        }else if(score >= targetNumber){
-            $("#losses").text(losses);
+
+            console.log("you win");
+        } if (score > targetNumber) {
             losses++;
+            $("#losses").text(losses);
+
             console.log("you lose");
         }
-            
+
 
     });
-    
-       
-
-
 
     $("#pink-crystal").on("click", function () {
-        score = score + pinkCrystalBtn;
+        score = parseInt(score) + parseInt(pinkCrystalBtn);
         $("#userscore").text(score);
         console.log(score);
-        if(score === targetNumber){
-            win++;
-            console.log("you win");
+        if (parseInt(score) === parseInt(targetNumber)) {
+            wins++;
             $("#wins").text(wins);
-        }else if(score >= targetNumber){
-            $("#losses").text(losses);
+
+            console.log("you win");
+        } if (score > targetNumber) {
             losses++;
+            $("#losses").text(losses);
+
             console.log("you lose");
         }
-        
+
     });
 
-
-
-
     $("#purple-crystal").on("click", function () {
-        score = score + purpleCrystalBtn;
+        score = parseInt(score) + parseInt(purpleCrystalBtn);
         $("#userscore").text(score);
         console.log(score);
-        
-        if(score === targetNumber){
-            win++;
-            console.log("you win");
+
+        if (parseInt(score) === parseInt(targetNumber)) {
+            wins++;
             $("#wins").text(wins);
-        }else if(score >= targetNumber){
-            $("#losses").text(losses);
+
+            console.log("you win");
+        }  if (score > targetNumber) {
             losses++;
+            $("#losses").text(losses);
+
             console.log("you lose");
         }
 
@@ -100,15 +99,16 @@ $(document).ready(function () {
 
 
     $("#magenta-crystal").on("click", function () {
-        score = score + magentaCrystalBtn;
+        score = parseInt(score) + parseInt(magentaCrystalBtn);;
         $("#userscore").text(score);
         console.log(score);
-        
-        if(score === targetNumber){
-            win++;
-            console.log("you win");
+
+        if (parseInt(score) === parseInt(targetNumber)) {
+            wins++;
             $("#wins").text(wins);
-        }else if(score >= targetNumber){
+
+            console.log("you win");
+        } if (score > targetNumber) {
             $("#losses").text(losses);
             losses++;
             $("#losses").text(losses);
@@ -119,4 +119,3 @@ $(document).ready(function () {
 
 
 });
-
