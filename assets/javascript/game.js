@@ -33,12 +33,6 @@ $(document).ready(function () {
     console.log("purplecrystal value " + purpleCrystalBtn);
 
 
-
-
-
-
-
-
     $("#blue-crystal").on("click", function () {
 
         score = parseInt(score) + parseInt(blueCrystalBtn);
@@ -49,13 +43,15 @@ $(document).ready(function () {
             $("#wins").text(wins);
 
             console.log("you win");
-        } if (score > targetNumber) {
+        }
+        if (score > targetNumber) {
             losses++;
             $("#losses").text(losses);
 
             console.log("you lose");
+            reset();
         }
-
+        
 
     });
 
@@ -68,13 +64,16 @@ $(document).ready(function () {
             $("#wins").text(wins);
 
             console.log("you win");
-        } if (score > targetNumber) {
+            reset();
+        }
+        if (score > targetNumber) {
             losses++;
             $("#losses").text(losses);
 
             console.log("you lose");
-        }
+            reset();
 
+        }
     });
 
     $("#purple-crystal").on("click", function () {
@@ -85,14 +84,19 @@ $(document).ready(function () {
         if (parseInt(score) === parseInt(targetNumber)) {
             wins++;
             $("#wins").text(wins);
+            reset();
 
             console.log("you win");
-        }  if (score > targetNumber) {
+        }
+        if (score > targetNumber) {
             losses++;
             $("#losses").text(losses);
 
             console.log("you lose");
+            reset();
+
         }
+
 
     });
 
@@ -108,14 +112,26 @@ $(document).ready(function () {
             $("#wins").text(wins);
 
             console.log("you win");
-        } if (score > targetNumber) {
+        }
+        if (score > targetNumber) {
             $("#losses").text(losses);
             losses++;
             $("#losses").text(losses);
             console.log("you lose");
         }
+        reset();
     });
 
 
+
+
+
+
+    function reset() {
+     score=0;
+     targetNumber=0;
+     targetNumber = Math.floor(Math.random() * 101) + 19;
+     $("#targetscore").text(targetNumber);
+    }
 
 });
