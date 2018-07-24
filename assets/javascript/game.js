@@ -1,4 +1,10 @@
- $(document).ready(function () {
+
+
+
+
+
+$(document).ready(function () {
+    
 
 
      // tracks the score input
@@ -11,6 +17,7 @@
      //  tracks the losses
      var losses = 0;
      $("#losses").text(losses);
+     
 
      // target number randomly selects a number between 120 and 19
      var targetNumber = [Math.floor(Math.random() * 101) + 19];
@@ -28,31 +35,39 @@
      console.log("purplecrystal value " + purpleCrystalBtn);
 
 
+        
+        
 
+        
+    
 
      $("#blue-crystal").on("click", function () {
-        score = parseInt(score) + parseInt(blueCrystalBtn);
-         $("#userscore").text(blueCrystalBtn);
-         console.log("blue crystal is " + blueCrystalBtn);
+
+
+         $("#userscore").text(score);
+          score = score + blueCrystalBtn;
+         console.log("blue crystal value is " + blueCrystalBtn);
 
      });
      $("#pink-crystal").on("click", function () {
-        score = parseInt(score) + parseInt(blueCrystalBtn);
-         $("#userscore").text(pinkCrystalBtn);
-         console.log("pink crystal is " + pinkCrystalBtn);
+        score = score + pinkCrystalBtn;
+         $("#userscore").text(score);
+         console.log("pink crystal value is " + pinkCrystalBtn);
      })
 
 
      $("#purple-crystal").on("click", function () {
-         $("#userscore").text(purpleCrystalBtn);
-         console.log("purple crystal is " + purpleCrystalBtn);
+         score = score + purpleCrystalBtn;
+         $("#userscore").text(score);
+         console.log("purple crystal value is " + purpleCrystalBtn);
 
      })
 
 
      $("#magenta-crystal").on("click", function () {
-         $("#userscore").text(magentaCrystalBtn);
-         console.log("blue crystal is " + magentaCrystalBtn);
+         score = score + magentaCrystalBtn;
+         $("#userscore").text(score);
+         console.log("magenta crystal is " + magentaCrystalBtn);
 
      })
 
