@@ -148,8 +148,8 @@ $(document).ready(function () {
         console.log("new magentacyrstal value is " + magentaCrystalBtn);
          pinkCrystalBtn = Math.floor(Math.random() * 11) + 1;
         console.log("new pinkcrystal value is " + pinkCrystalBtn);
-         purpleCrystalBtn = Math.floor(Math.random() * 11) + 1;
-        console.log("new purplecrystal value " + purpleCrystalBtn);
+         redCrystalBtn = Math.floor(Math.random() * 11) + 1;
+        console.log("new purplecrystal value " + redCrystalBtn);
         
 
     }
