@@ -25,8 +25,8 @@ $(document).ready(function () {
     console.log("magentacyrstal value is " + magentaCrystalBtn);
     var pinkCrystalBtn = Math.floor(Math.random() * 12) + 1;
     console.log("pinkcrystal value is " + pinkCrystalBtn);
-    var purpleCrystalBtn = Math.floor(Math.random() * 12) + 1;
-    console.log("purplecrystal value is " + purpleCrystalBtn);
+    var redCrystalBtn = Math.floor(Math.random() * 12) + 1;
+    console.log("purplecrystal value is " + redCrystalBtn);
 
 
     // on the click of the blue crystal a value is generated and is added to the overall score
@@ -79,8 +79,8 @@ $(document).ready(function () {
     });
     // same concept of the previous on click button
 
-    $("#purple-crystal").on("click", function () {
-        score = parseInt(score) + parseInt(purpleCrystalBtn);
+    $("#red-crystal").on("click", function () {
+        score = parseInt(score) + parseInt(redCrystalBtn);
         $("#userscore").text(score);
         console.log(score);
 

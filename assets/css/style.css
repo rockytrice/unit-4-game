@@ -12,13 +12,12 @@ h1 {
     text-align: center;
 }
 
-
+/* =============================game section container========================= */
 .container container-game {
     height: 600px;
 }
 
-.lead,
-p {
+.lead, p {
     font-family: 'Architects Daughter', cursive;
     font-size: 27px;
 }
@@ -27,70 +26,92 @@ p {
     margin-right: 4px;
 }
 
- img {
-    height: 125px;
-    width: 125px;
+/* ======================crystal images=========================================== */
+img {
+    height: 150px;
+    width: 150px;
     position: relative;
-    top: 40px;
     display: inline-block;
 }
+
 .btn:not(:disabled):not(.disabled) {
     margin-right: -22px;
-} 
+}
 
+h1.target{
+    font-size: 30px;
+}
+
+/* =================background color for  card body =========================*/
+.card-body{
+background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+text-align: center;
+}
+
+/* =================background color for card header===========================*/
+.card-header {
+background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+
+}
+
+/* =====================crystal selector button style=========================== */
+.btn-light{
+    background-color: transparent;
+    border:none;
+    outline-style:none;
+}
+ .btn-light:hover{
+     background-color: transparent;
+ }
+ 
+/* end of selector style */
+
+/* ===========================target score===================================== */
 #targetscore {
-    height: 250px;
-    width: 241px;
-    background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
     text-align: center;
-    font-size: 100px;
-    padding-top: 33px;
+    font-size: 80px;
     font-family: 'Modak', cursive;
-    margin-bottom: 30px;
 }
-
+/*============================= user score==================================== */
 #userscore {
-    height: 250px;
-    width: 241px;
-    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
     text-align: center;
-    font-size: 100px;
-    padding-top: 33px;
+    font-size: 80px;
     font-family: 'Modak', cursive;
 }
 
+/* ===========================crystal selectors======================================= */
 #selectors {
-    height: 250px;
-    width: 600px;
     background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
     text-align: center;
-    position: absolute;
-    top: 51px;
+   position: absolute;
 }
-
+/* ===============================wins count============================================ */
 #wins {
-    height: 250px;
-    width: 241px;
-    background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
     text-align: center;
-    margin-top: 40px;
-    font-size: 100px;
-    padding-top: 33px;
+    font-size: 80px;
     font-family: 'Modak', cursive;
-    margin-left: 50px;
-    margin-top: 9px;
 }
-
+/* ================================Losses count============================================= */
 #losses {
-    height: 250px;
+    /* height: 250px;
     width: 241px;
     position: relative;
-    background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+    background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%); */
     text-align: center;
-    margin-top: 40px;
-    font-size: 100px;
-    padding-top: 33px;
+    /* margin-top: 40px; */
+    font-size: 80px;
+    /* padding-top: 33px; */
     font-family: 'Modak', cursive;
-    margin-left: 50px;
-    margin-top: 9px;
+    /* margin-left: 50px;
+    margin-top: 9px; */
 }
+
+
+
+
+
+
+
+
+
+

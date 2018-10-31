@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bangers|Bungee|Ceviche+One|Modak|Rammetto+One|Snowburst+One|Ultra"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
 <body>
@@ -21,15 +20,14 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">
-                    <h1>
-                        <i class="far fa-gem"></i>Crystal Collector
+                      <i class="far fa-gem"></i>Crystal Collector
                         <i class="far fa-gem"></i>
                         <br>
-                        <!-- Button trigger modal -->
+                        <!-- =========================Button trigger modal============================================== -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                             More Info </button>
 
-                        <!-- Modal -->
+                        <!-- =========================Modal instructions================================================= -->
                         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
@@ -40,11 +38,11 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        There are four Crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You
+                                       <p> There are four Crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You
                                         win the game by matching your total score to a random number, you lose the game if
                                         your total score goes above the random number. The value of each crystal is hidden
                                         from you until you click on it. Note: each time the game starts, the game will change
-                                        the values of the crystal. Goodluck!!
+                                        the values of the crystal. Goodluck!!</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -53,82 +51,95 @@
                                 </div>
                             </div>
                         </div>
-
-                    </h1>
-
-
-
-
+                   </h1>
             </div>
-
         </div>
     </header>
+        <div class="container container-game">
+            <div class="row">
+                <!-- ==================================Target Score card================================================== -->
+                <div class="col-sm-3">
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">
+                            <h1 class="target">Target Score
+                              <span id="number-to-guess"></span>
+                            </h1>                       
+                        </div>
+                        <div class="card-body">
+                          <div id="targetscore"></div>
+                        </div>
+                    </div>
+                 </div>
+                  <!--================================ UserScore card===================================================== -->
+                 <div class="col-sm-3"> 
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">
+                           <h1 class="target"> Score
+                        </div>
+                        <div class="card-body">
+                          <div id="userscore"></div>
+                        </div>
+                    </div>     
+                </div>
+                  <!--================================ Wins card===================================================== -->
+                <div class="col-sm-3">
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">
+                            <h1 class="target">Wins</h1>                       
+                        </div>
+                        <div class="card-body">
+                            <div id="wins"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--================================ Losses card===================================================== -->
+                <div class="col-sm-3">
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">
+                                <h1 class="target">Losses</h1>                       
+                            </div>
+                            <div class="card-body">
+                                <div id="losses"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <!--================================ Crystal Selector Card================================================== -->
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1>Crystal Selector</h1>
+                                </div>
+                                <div class="card-body">
+                                    <div id="selectors"></div>
+                                    <button id="blue-crystal" class="btn btn-light" value="1">
+                                        <img src="https://cdn1.iconfinder.com/data/icons/crystal-1/60/blue_crystal-512.png" alt="blue-crystal">
+                                    </button>
+                
+                                    </button>
+                                    <button id="magenta-crystal" class="btn btn-light" value="2">
+                                        <img src="https://cdn1.iconfinder.com/data/icons/crystal-1/60/magenta_crystal-512.png">
+                                    </button>
+                                    <button id="pink-crystal" class="btn btn-light" value="3">
+                                        <img src="https://cdn1.iconfinder.com/data/icons/crystal-1/60/pink_crystal-512.png" alt="pink crystal">
+                                    </button>
+                                    <button id="red-crystal" class="btn btn-light" value="4">
+                                        <img src=" https://cdn1.iconfinder.com/data/icons/crystal-1/60/red_crystal-512.png" alt="red-crystal">
+                                    </button>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 
-
-    <div class="container container-game">
-        <div class="row">
-            <div class="col-sm-3">
-                <h1>Target Score
-                    <span id="number-to-guess"></span>
-                </h1>
-                <div id="targetscore"></div>
-
-            </div>
-            <div class="col-sm-3">
-                <h1>Score
-
-                </h1>
-                <div id="userscore"></div>
-
-            </div>
-            <div class="col-sm-6">
-                <h1>Crystal Selector</h1>
-                <div id="selectors"></div>
-
-                <button id="blue-crystal" class="btn btn-light" value="1">
-                    <img src="https://cdn1.iconfinder.com/data/icons/crystal-1/60/blue_crystal-512.png" alt="blue-crystal">
-                </button>
-
-                </button>
-                <button id="magenta-crystal" class="btn btn-light" value="2">
-                    <img src="https://cdn1.iconfinder.com/data/icons/crystal-1/60/magenta_crystal-512.png">
-                </button>
-                <button id="pink-crystal" class="btn btn-light" value="3">
-                    <img src="https://cdn1.iconfinder.com/data/icons/crystal-1/60/pink_crystal-512.png" alt="pink crystal">
-                </button>
-                <button id="purple-crystal" class="btn btn-light" value="4">
-                    <img src=" https://cdn1.iconfinder.com/data/icons/outlined-medieval-icons-pack/200/minerals_purple_stone-512.png" alt="purple-crystal">
-                </button>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h1>Wins</h1>
-                <div id="wins"></div>
-
-            </div>
-            <div class="col-sm-4">
-                <div id="crystals"></div>
-            </div>
-            <div class="col-md-4">
-                <h1>Losses</h1>
-                <div id="losses"></div>
-
-            </div>
-
-
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-
-
-</body>
+  </body>
 
 </html>
